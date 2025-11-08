@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ConfeLog</string>
+    <string name="login_title">Entrar</string>
+    <string name="register_title">Cadastrar</string>
+</resources>

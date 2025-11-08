@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout para criar insumos e embalagens -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical" android:padding="12dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <EditText android:id="@+id/edt_name" android:hint="Nome do Insumo/Embalagem" android:inputType="text" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/edt_description" android:hint="Descrição" android:inputType="text" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/edt_price" android:hint="Preço de Custo (em centavos)" android:inputType="number" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/edt_qty" android:hint="Quantidade" android:inputType="number" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        
+        <TextView android:text="Categoria" android:layout_marginTop="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <RadioGroup android:id="@+id/rg_category" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/rb_insumo" android:text="Insumo"/>
+            <RadioButton android:id="@+id/rb_embalagem" android:text="Embalagem"/>
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/container_measurement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView android:text="Medida do Insumo" android:layout_marginTop="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edt_measurement_value"
+                    android:hint="Valor"
+                    android:inputType="numberDecimal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_measurement_unit"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RadioButton android:id="@+id/rb_g" android:text="g"/>
+                    <RadioButton android:id="@+id/rb_ml" android:text="ml"/>
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView android:text="Tipo de Unidade" android:layout_marginTop="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <RadioGroup android:id="@+id/rg_unit_type" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/rb_unidade" android:text="Unidade"/>
+            <RadioButton android:id="@+id/rb_fardos" android:text="Fardos"/>
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/edt_units_per_fardo"
+            android:hint="Unidades por fardo"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <Button android:id="@+id/btn_save" android:text="Salvar" android:layout_marginTop="24dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>

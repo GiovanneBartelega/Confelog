@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:padding="24dp"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <Button android:id="@+id/btn_producao" android:text="Controle de Produção" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <Button android:id="@+id/btn_recipes" android:text="Receitas" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <Button android:id="@+id/btn_products" android:text="Produtos" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <Button android:id="@+id/btn_orders" android:text="Encomendas" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <Button android:id="@+id/btn_clientes" android:text="Clientes" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <Button android:id="@+id/btn_stock_report" android:text="Estoque" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <Button android:id="@+id/btn_manage_users" android:text="Gerenciar Usuários" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <Button android:id="@+id/btn_logout" android:text="Sair" android:layout_marginTop="48dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

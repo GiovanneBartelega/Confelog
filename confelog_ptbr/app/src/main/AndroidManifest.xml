@@ -1,0 +1,28 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ConfeLog">
+        <activity android:name="com.example.confelog.ui.auth.LoginActivity" android:label="Login" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.confelog.ui.MainActivity" android:label="ConfeLog"/>
+        <activity android:name="com.example.confelog.ui.auth.RegisterActivity" android:label="Novo Usuário"/>
+        <activity android:name="com.example.confelog.ui.orders.OrderCreateActivity" android:label="Nova Encomenda"/>
+        <activity android:name="com.example.confelog.ui.orders.OrderListActivity" android:label="Encomendas"/>
+        <activity android:name="com.example.confelog.ui.products.ProductCreateActivity" android:label="Novo Insumo/Embalagem" android:configChanges="keyboard|keyboardHidden|orientation|screenSize"/>
+        <activity android:name="com.example.confelog.ui.products.ProductListActivity" android:label="Produtos"/>
+        <activity android:name="com.example.confelog.ui.StockReportActivity" android:label="Estoque"/>
+        <activity android:name="com.example.confelog.ui.clientes.ClienteCreateActivity" android:label="Novo Cliente" android:configChanges="keyboard|keyboardHidden|orientation|screenSize"/>
+        <activity android:name="com.example.confelog.ui.clientes.ClienteListActivity" android:label="Clientes"/>
+        <activity android:name="com.example.confelog.ui.producao.ProducaoListActivity" android:label="Controle de Produção"/>
+        <activity android:name="com.example.confelog.ui.receitas.RecipeListActivity" android:label="Receitas"/>
+        <activity android:name="com.example.confelog.ui.receitas.RecipeCreateActivity" android:label="Nova Receita e Produto Final" android:configChanges="keyboard|keyboardHidden|orientation|screenSize"/>
+        <activity android:name="com.example.confelog.ui.users.UserManagementActivity" android:label="Gerenciar Usuários"/>
+    </application>
+</manifest>
